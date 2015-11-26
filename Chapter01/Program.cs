@@ -16,6 +16,8 @@ namespace Chapter01
             Console.WriteLine("1 - Insertion Sort");
             Console.WriteLine("2 - Merge Sort");
             Console.WriteLine("3 - Bubble Sort");
+            Console.WriteLine("4 - Fibonnaci Series");
+            Console.WriteLine("5 - Recursive Fibonnaci Series");
 
             var algorithm = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +33,13 @@ namespace Chapter01
                     break;
                 case 3:
                     new BubbleSort().PrintBubbleSort();
+                    break;
+
+                case 4:
+                    new Fibonnaci().FibonnaciSeries();
+                    break;
+                case 5:
+                    new RecursiveFibonnaci().PrintRecursiveFibonnaci();
                     break;
 
                 default:
