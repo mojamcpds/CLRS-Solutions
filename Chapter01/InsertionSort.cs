@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Chapter01
 {
 
-    //For better Optimization please check the link:https://code.google.com/p/clrs-examples/source/browse/src/ca/jvsh/algorithm/Algorithms.java?r=7ecedd94139b1dc161fcac057cb4989db6bb6478
 
     public class InsertionSort
     {
