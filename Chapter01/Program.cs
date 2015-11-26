@@ -1,48 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Chapter01
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            #region Insertion Sorting
 
-            //var insertionSort = new InsertionSort();
-            //var list = new List<int>();
-            //Console.WriteLine("Please Enter the number of elements");
-            //var n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter algorithm demo number");
+            Console.WriteLine("1 - Insertion Sort");
+            Console.WriteLine("2 - Merge Sort");
+            Console.WriteLine("3 - Bubble Sort");
 
-            //for (var i = 0; i < n; i++)
-            //{
-            //    var sortableElement = Convert.ToInt32(Console.ReadLine());
-            //    list.Add(sortableElement);
-            //}
+            var algorithm = Convert.ToInt32(Console.ReadLine());
 
-            //insertionSort.InsertionSorting(list, list.Count());
-            //insertionSort.PrintInsertionSort(list,list.Count());
+            Console.WriteLine("Entered " + algorithm);
 
-            #endregion
-
-            #region Merge Sorting
-            var mergeSort = new MergeSort();
-            var list = new List<int>();
-            Console.WriteLine("Please Enter the number of elements");
-            var n = Convert.ToInt32(Console.ReadLine());
-
-            for (var i = 0; i < n; i++)
+            switch (algorithm)
             {
-                var sortableElement = Convert.ToInt32(Console.ReadLine());
-                list.Add(sortableElement);
-            }
+                case 1:
+                    new InsertionSort().PrintInsertionSort();
+                    break;
+                case 2:
+                    new MergeSort().PrintMergeSort();
+                    break;
+                case 3:
+                    new BubbleSort().PrintBubbleSort();
+                    break;
 
-            mergeSort.MergeSorting(list, 0,list.Count()-1);
-            mergeSort.PrintMergeSort(list);
-            #endregion
+                default:
+                    Console.WriteLine("No such algorithm");
+                    break;
+            }
 
             Console.ReadKey();
 

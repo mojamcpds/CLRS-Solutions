@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Chapter01
 {
+
+    //For better Optimization please check the link:https://code.google.com/p/clrs-examples/source/browse/src/ca/jvsh/algorithm/Algorithms.java?r=7ecedd94139b1dc161fcac057cb4989db6bb6478
+
     public class InsertionSort
     {
         public void InsertionSorting(List<int> pp, int size)
@@ -23,13 +26,28 @@ namespace Chapter01
             }
         }
 
-        public void PrintInsertionSort(List<int> pp, int size)
+        public void PrintInsertionSort()
         {
-            Console.WriteLine("\n");
-            Console.WriteLine("The Sorting Result is:");
-            for (var i = 0; i < size; i++)
+            Console.WriteLine("Insertion Sort Example");
+
+            var list = new List<int>();
+
+            Console.WriteLine("Please Enter the number of elements");
+            var n = Convert.ToInt32(Console.ReadLine());
+
+            for (var i = 0; i < n; i++)
             {
-                System.Console.WriteLine(pp[i]);
+                Console.WriteLine("Enter Elemennt " + (i + 1).ToString());
+                var sortableElement = Convert.ToInt32(Console.ReadLine());
+                list.Add(sortableElement);
+            }
+
+            InsertionSorting(list, list.Count());
+
+            Console.WriteLine("The output is :");
+            foreach (var t in list)
+            {
+                Console.WriteLine(t);
             }
         }
     }

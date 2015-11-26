@@ -8,7 +8,7 @@ namespace Chapter01
 {
     public class MergeSort
     {
-        
+        //For better Optimization please check the link:https://code.google.com/p/clrs-examples/source/browse/src/ca/jvsh/algorithm/Algorithms.java?r=7ecedd94139b1dc161fcac057cb4989db6bb6478
         /// <summary>
         ///Recursive merge sort procedure to sort the subarray
         /// </summary>
@@ -76,8 +76,25 @@ namespace Chapter01
             }
         }
 
-        public void PrintMergeSort(List<int> list)
+        public void PrintMergeSort()
         {
+
+            Console.WriteLine("Merge Sort Example");
+            
+            var list = new List<int>();
+            Console.WriteLine("Please Enter the number of elements");
+            var n = Convert.ToInt32(Console.ReadLine());
+
+            for (var i = 0; i < n; i++)
+            {
+                Console.WriteLine("Enter Elemennt " + (i + 1).ToString());
+
+                var sortableElement = Convert.ToInt32(Console.ReadLine());
+                list.Add(sortableElement);
+            }
+
+            MergeSorting(list, 0, list.Count() - 1);
+            
             Console.WriteLine("Sorting Result is:");
             foreach (var t in list)
             {
