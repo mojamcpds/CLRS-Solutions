@@ -1,0 +1,6 @@
+E:\ProjectManagementSystems\CLRSSolutions\Chapter01\bin\Debug\Chapter01.exe.config
+E:\ProjectManagementSystems\CLRSSolutions\Chapter01\bin\Debug\Chapter01.exe
+E:\ProjectManagementSystems\CLRSSolutions\Chapter01\bin\Debug\Chapter01.pdb
+E:\ProjectManagementSystems\CLRSSolutions\Chapter01\obj\Debug\Chapter01.csprojResolveAssemblyReference.cache
+E:\ProjectManagementSystems\CLRSSolutions\Chapter01\obj\Debug\Chapter01.exe
+E:\ProjectManagementSystems\CLRSSolutions\Chapter01\obj\Debug\Chapter01.pdb
